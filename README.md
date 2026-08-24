@@ -104,7 +104,6 @@ Models were trained with standard nnU-Net v2 in the `2d` configuration (`nnUNetT
 - GPU is mandatory; there is no CPU fallback.
 - The DICOM branch handles one series per input folder.
 - Check orientation; verify overlays in your viewer before downstream use.
-- Performance outside the training distribution (different scanners, sequences, paediatric or heavily pathological anatomy) has not been validated.
 
 ## Contact
 tbd
