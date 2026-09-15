@@ -97,7 +97,7 @@ Label values in the NIfTI output: `1 = ventricle`, `2 = brain stem`, `0 = backgr
 
 ## Training
 
-Models were trained with standard nnU-Net v2 in the `2d` configuration (`nnUNetTrainer__nnUNetPlans__2d`), using `checkpoint_best.pth` for inference. 
+Models were trained with standard nnU-Net v2 ([nnU-Net](https://github.com/MIC-DKFZ/nnUNet))  in the `2d` configuration (`nnUNetTrainer__nnUNetPlans__2d`), using `checkpoint_best.pth` for inference. 
 
 ## Known limitations
 
