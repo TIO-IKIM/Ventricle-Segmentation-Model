@@ -107,7 +107,8 @@ class VenSegModel():
         logging.info('Model ready!')
        
     def predict(self) -> None:
-        if glob.glob(os.path.join(self.args.input_folder,'*.dcm',case_sensitive=False)):
+        os.makedirs(self.args.output_folder,exist_ok=True)
+        if glob.glob(os.path.join(self.args.input_folder,'*.[dD][cC][mM]')):
             with tempfile.TemporaryDirectory(dir='.') as in_dir:
             
                 name = self.args.input_folder.split(os.path.sep)[-1] +f'_0000.nii.gz'
@@ -131,7 +132,7 @@ class VenSegModel():
                                 save_path=self.args.output_folder
                              )
         
-        elif os.listdir(self.args.input_folder)[0].endswith('nii.gz'):
+        elif glob.glob(os.path.join(self.args.input_folder,'*.nii.gz')):
             self.predictor.predict_from_files(
                                                 list_of_lists_or_source_folder=self.args.input_folder,
                                                 output_folder_or_list_of_truncated_output_files=self.args.output_folder
