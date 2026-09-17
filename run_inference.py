@@ -12,6 +12,7 @@ from rt_utils import RTStructBuilder
 import argparse
 import nibabel as nib
 import numpy as np
+import glob
 import SimpleITK as sitk
 
 def converter(
@@ -106,7 +107,7 @@ class VenSegModel():
         logging.info('Model ready!')
        
     def predict(self) -> None:
-        if os.listdir(self.args.input_folder)[0].endswith('dcm'):
+        if glob.glob(self.args.input_folder,'*.dcm') != []:
             with tempfile.TemporaryDirectory(dir='.') as in_dir:
             
                 name = self.args.input_folder.split(os.path.sep)[-1] +f'_0000.nii.gz'
@@ -126,7 +127,7 @@ class VenSegModel():
                     converter(
                                 dicom_series_path=self.args.input_folder,
                                 multilabel_mask_path=nifti_mask,
-                                name=name.rstrip('.nii.gz'),
+                                name=name.removesuffix('.nii.gz'),
                                 save_path=self.args.output_folder
                              )
         
