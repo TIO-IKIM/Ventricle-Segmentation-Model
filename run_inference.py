@@ -1,5 +1,5 @@
 """
-Authors: Lukas Heine, Fabian Hörst, Jana Fragemann, Frederic Jonske, Gijs Luijten
+Authors: Lukas Heine, Fabian Hörst, Jana Fragemann, Moritz Rempe, Frederic Jonske, Gijs Luijten
 Institute for Artificial Intelligence in Medicine
 University Hospital Essen
 """
