@@ -12,13 +12,8 @@ If you use this code or the trained models, please cite:
 
 tbd
 
-Please also cite nnU-Netv2:
+Please also cite nnU-Netv2 [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) since the model is based on it.
 
-```
-Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021).
-nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation.
-Nature Methods, 18(2), 203-211.
-```
 ---
 
 ## License
