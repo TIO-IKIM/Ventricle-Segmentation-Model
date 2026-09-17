@@ -107,7 +107,7 @@ class VenSegModel():
         logging.info('Model ready!')
        
     def predict(self) -> None:
-        if glob.glob(os.path.join(self.args.input_folder,'*.dcm')):
+        if glob.glob(os.path.join(self.args.input_folder,'*.dcm',case_sensitive=False)):
             with tempfile.TemporaryDirectory(dir='.') as in_dir:
             
                 name = self.args.input_folder.split(os.path.sep)[-1] +f'_0000.nii.gz'
