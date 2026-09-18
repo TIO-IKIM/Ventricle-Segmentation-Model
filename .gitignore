@@ -2,3 +2,4 @@ __pycache__/
 .vscode
 nnUNet_results/ 
 .DS_Store
+*.pth
