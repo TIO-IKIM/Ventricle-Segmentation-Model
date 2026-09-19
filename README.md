@@ -21,8 +21,6 @@ Please also cite [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) since the model i
  - Code: Apache License 2.0, modified by the Commons Clause and attribution terms in the License file (see [LICENSE](LICENSE)). \
  - Model weights: Creative Commons Attribution Non Commercial Share Alike 4.0 (CC BY-NC-SA 4.0) (see [LICENSE](LICENSE)). 
 
-Note that nnU-Net itself is Apache-2.0 licensed; derived models inherit its terms where applicable.
-
 ---
 
 ## Requirements
