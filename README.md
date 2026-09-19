@@ -12,8 +12,6 @@ If you use this code or the trained models, please cite:
 
 tbd
 
-Please also cite [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) since the model is based on it.
-
 ---
 
 ## License
