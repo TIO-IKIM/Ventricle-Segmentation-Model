@@ -10,7 +10,7 @@ Automatic segmentation of the **ventricular system** and **brain stem** in brain
 
 If you use this code or the trained models, please cite:
 
-tbd
+Heinzelmann, Feline, et al. "Deep learning segmentation of the cerebral ventricular system and brainstem for pediatric radiotherapy planning." Physics and Imaging in Radiation Oncology (2026): 101086.
 
 ---
 
