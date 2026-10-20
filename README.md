@@ -30,7 +30,7 @@ Heinzelmann, Feline, et al. "Deep learning segmentation of the cerebral ventricu
 
 ## Model weights
 
-Weights are **not** included in this repository. Download them from `<WEIGHTS URL / Zenodo DOI>` and unpack so the tree looks like this:
+Weights are **not** included in this repository. Request them and unpack so the tree looks like this:
 
 ```
 nnUNet_results/
